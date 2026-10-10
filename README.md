@@ -25,6 +25,8 @@ I work on the performance and numerical correctness of scientific and ML softwar
 | **Sandia National Laboratories pyGSTi** | [Default POVM for circuits on a subset of a model's qubits](https://github.com/sandialabs/pyGSTi/pull/932); fixes #721, a 0.11 release blocker | Circuits on part of a multi-qubit model no longer fail with "Missing POVM"; merged by a Sandia maintainer |
 | **Microsoft Olive** | [Declare `requests` as an install dependency](https://github.com/microsoft/Olive/pull/2693) | Fixes `import olive` failing after a fresh install; also hit by Microsoft's olive-recipes |
 | **ONNX** (Linux Foundation AI) | [Define `DynamicQuantizeLinear` scale for all-zero inputs](https://github.com/onnx/onnx/pull/8494) | Spec and reference fix: all-zero inputs no longer give a zero scale (NaN downstream); now matches ONNX Runtime |
+| **Apache ShenYu** (Apache Software Foundation) | [Render non-JSON API debug responses as plain text](https://github.com/apache/shenyu-dashboard/pull/708); fixes security issue #614 | The admin console no longer renders upstream response bodies as HTML; merged by a ShenYu PMC member |
+| **pylint** | [Fix pyreverse hang/RecursionError with `--all-associated`](https://github.com/pylint-dev/pylint/pull/11620); closes #3602 | Class diagrams of code that rebuilds classes on each inference no longer hang or crash; merged by the pylint maintainer and backported to 4.1.x |
 | **ogx** | [Dependency floor for the inline provider](https://github.com/ogx-ai/ogx/pull/6669) | Fixes a user-reported install failure |
 | **cartography (CNCF)** | [Handle empty Google Workspace groups](https://github.com/cartography-cncf/cartography/pull/2018) | Fixes a sync crash |
 
