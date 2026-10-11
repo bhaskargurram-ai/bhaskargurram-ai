@@ -27,6 +27,7 @@ I work on the performance and numerical correctness of scientific and ML softwar
 | **ONNX** (Linux Foundation AI) | [Define `DynamicQuantizeLinear` scale for all-zero inputs](https://github.com/onnx/onnx/pull/8494) | Spec and reference fix: all-zero inputs no longer give a zero scale (NaN downstream); now matches ONNX Runtime |
 | **Apache ShenYu** (Apache Software Foundation) | [Render non-JSON API debug responses as plain text](https://github.com/apache/shenyu-dashboard/pull/708); fixes security issue #614 | The admin console no longer renders upstream response bodies as HTML; merged by a ShenYu PMC member |
 | **pylint** | [Fix pyreverse hang/RecursionError with `--all-associated`](https://github.com/pylint-dev/pylint/pull/11620); closes #3602 | Class diagrams of code that rebuilds classes on each inference no longer hang or crash; merged by the pylint maintainer and backported to 4.1.x |
+| **Rust `cc` crate** (rust-lang/cc-rs) | [Stop forwarding `-Cprofile-generate`/`-Cprofile-use` to the C compiler](https://github.com/rust-lang/cc-rs/pull/2003); fixes #1986 | PGO builds no longer segfault when the C compiler's LLVM differs from rustc's (the cause behind rust-lang/rust#163640); merged by the cc-rs maintainer the same day |
 | **ogx** | [Dependency floor for the inline provider](https://github.com/ogx-ai/ogx/pull/6669) | Fixes a user-reported install failure |
 | **cartography (CNCF)** | [Handle empty Google Workspace groups](https://github.com/cartography-cncf/cartography/pull/2018) | Fixes a sync crash |
 
