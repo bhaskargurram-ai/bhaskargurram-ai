@@ -92,8 +92,8 @@ flowchart TB
 ## Speedups that shipped
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/speedups-dark.svg">
-  <img src="assets/speedups-light.svg" alt="Bar chart of measured speedups: statsmodels 13,000x, JAX lexsort 736x, xarray interp 57x, JAX unique 55x, candle prefill 1.45x" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhaskargurram-ai/bhaskargurram-ai/main/assets/speedups-dark.svg">
+  <img src="https://raw.githubusercontent.com/bhaskargurram-ai/bhaskargurram-ai/main/assets/speedups-light.svg" alt="Bar chart of measured speedups: statsmodels 13,000x, JAX lexsort 736x, xarray interp 57x, JAX unique 55x, candle prefill 1.45x" width="100%">
 </picture>
 
 Each bar is a change that was reviewed and merged by the project's maintainers. Timings are from the pull requests.
