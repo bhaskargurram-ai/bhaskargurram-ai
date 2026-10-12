@@ -2,15 +2,15 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0b1b3a,50:1f4e9c,100:2a78d6&text=Bhaskar%20Gurram&fontColor=ffffff&fontSize=52&fontAlignY=38&desc=AI%2FML%20engineer%20%C2%B7%20performance%20and%20correctness%20in%20open-source%20scientific%20software&descAlignY=58&descSize=17&animation=fadeIn" width="100%" alt="Bhaskar Gurram" />
 
-<a href="https://github.com/bhaskargurram-ai"><img src="https://readme-typing-svg.demolab.com/?lines=AI%2FML+engineer+at+Zasti+Inc.;I+make+numerical+code+faster+and+more+correct.;19+merged+upstream+PRs+across+17+projects;Google+JAX+%C2%B7+statsmodels+%C2%B7+Hugging+Face+%C2%B7+Apache+%C2%B7+Rust;30%2B+more+in+review+right+now&font=Fira+Code&size=20&duration=3200&pause=800&color=2A78D6&center=true&vCenter=true&width=720&height=48" alt="typing banner" /></a>
+<a href="https://github.com/bhaskargurram-ai"><img src="https://readme-typing-svg.demolab.com/?lines=AI%2FML+engineer+at+Zasti+Inc.;I+make+numerical+code+faster+and+more+correct.;20+merged+upstream+PRs+across+18+projects;Google+JAX+%C2%B7+statsmodels+%C2%B7+Hugging+Face+%C2%B7+Apache+%C2%B7+Rust;30%2B+more+in+review+right+now&font=Fira+Code&size=20&duration=3200&pause=800&color=2A78D6&center=true&vCenter=true&width=720&height=48" alt="typing banner" /></a>
 
 <a href="https://bhaskar.website"><img src="https://img.shields.io/badge/Website-bhaskar.website-2a78d6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
 <a href="https://scholar.google.com/citations?user=0tSEbKIAAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Google Scholar" /></a>
 <a href="https://www.linkedin.com/in/bhaskar-gurram"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:gurrambhaskar.ai@gmail.com"><img src="https://img.shields.io/badge/Email-gurrambhaskar.ai%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
-<img src="https://img.shields.io/badge/merged%20upstream%20PRs-19-2ea043?style=flat-square" alt="19 merged upstream PRs" />
-<img src="https://img.shields.io/badge/projects-17-1f6feb?style=flat-square" alt="17 projects" />
+<img src="https://img.shields.io/badge/merged%20upstream%20PRs-20-2ea043?style=flat-square" alt="20 merged upstream PRs" />
+<img src="https://img.shields.io/badge/projects-18-1f6feb?style=flat-square" alt="18 projects" />
 <img src="https://img.shields.io/badge/in%20review-30%2B-8957e5?style=flat-square" alt="30+ in review" />
 <img src="https://img.shields.io/badge/papers-2%20on%20arXiv-b45309?style=flat-square" alt="2 arXiv papers" />
 <img src="https://komarev.com/ghpvc/?username=bhaskargurram-ai&style=flat-square&color=2a78d6&label=profile+views" alt="profile views" />
@@ -43,6 +43,7 @@ M.S. in Computer Science, University of Cincinnati. AI Engineer at Zasti Inc. (A
 <img src="https://img.shields.io/badge/USGS%20dataretrieval-merged-0B6E4F?style=for-the-badge" alt="USGS dataretrieval" />
 <img src="https://img.shields.io/badge/Sandia%20pyGSTi-merged-00539F?style=for-the-badge" alt="Sandia pyGSTi" />
 <img src="https://img.shields.io/badge/CNCF%20cartography-merged-6D4C9F?style=for-the-badge" alt="CNCF cartography" />
+<img src="https://img.shields.io/badge/Milvus%20pymilvus-merged-00A1EA?style=for-the-badge" alt="Milvus pymilvus" />
 
 </div>
 
@@ -77,7 +78,8 @@ flowchart TB
         cset["CISA CSET: PBKDF2 work factor"]:::node
         usgs["USGS: open-ended date ranges"]:::node
         ls["LangSmith: keep HTTP response on errors"]:::node
-        cc ~~~ shenyu ~~~ cset ~~~ usgs ~~~ ls
+        pym["pymilvus: import keeps app log handlers"]:::node
+        cc ~~~ shenyu ~~~ cset ~~~ usgs ~~~ ls ~~~ pym
     end
 
     classDef me fill:#2a78d6,stroke:#1f4e9c,color:#ffffff,font-weight:bold
@@ -120,6 +122,7 @@ Each bar is a change that was reviewed and merged by the project's maintainers. 
 | **Sandia National Laboratories pyGSTi** | [Default POVM for circuits on a subset of a model's qubits](https://github.com/sandialabs/pyGSTi/pull/932); fixes #721, a 0.11 release blocker | Circuits on part of a multi-qubit model no longer fail with "Missing POVM"; merged by a Sandia maintainer |
 | **Microsoft Olive** | [Declare `requests` as an install dependency](https://github.com/microsoft/Olive/pull/2693) | Fixes `import olive` failing after a fresh install; also hit by Microsoft's olive-recipes |
 | **LangSmith SDK** | [Keep the HTTP response on `raise_for_status_with_text` errors](https://github.com/langchain-ai/langsmith-sdk/pull/3597) | Shipped in v0.14.2 |
+| **Milvus pymilvus** (LF AI & Data) | [Stop closing application logging handlers on import](https://github.com/milvus-io/pymilvus/pull/3814); fixes #3794 | Importing the SDK no longer silently kills the host application's log handlers; backported to 2.6 and 3.0 |
 | **ogx** | [Dependency floor for the inline provider](https://github.com/ogx-ai/ogx/pull/6669) | Fixes a user-reported install failure |
 | **cartography (CNCF)** | [Handle empty Google Workspace groups](https://github.com/cartography-cncf/cartography/pull/2018) | Fixes a sync crash |
 
