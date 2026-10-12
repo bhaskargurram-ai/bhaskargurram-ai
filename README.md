@@ -27,7 +27,7 @@ M.S. in Computer Science, University of Cincinnati. AI Engineer at Zasti Inc. (A
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Google%20JAX-3%20merged-4285F4?style=for-the-badge" alt="Google JAX" />
+<img src="https://img.shields.io/badge/Google%20JAX-4%20merged-4285F4?style=for-the-badge" alt="Google JAX" />
 <img src="https://img.shields.io/badge/statsmodels-merged-3F51B5?style=for-the-badge" alt="statsmodels" />
 <img src="https://img.shields.io/badge/xarray-merged-E28308?style=for-the-badge" alt="xarray" />
 <img src="https://img.shields.io/badge/Hugging%20Face%20candle-merged-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face candle" />
@@ -40,7 +40,7 @@ M.S. in Computer Science, University of Cincinnati. AI Engineer at Zasti Inc. (A
 <img src="https://img.shields.io/badge/Microsoft%20Olive-merged-5E5E5E?style=for-the-badge" alt="Microsoft Olive" />
 <img src="https://img.shields.io/badge/LangSmith%20SDK-merged-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" alt="LangSmith SDK" />
 <img src="https://img.shields.io/badge/CISA%20CSET-merged-005288?style=for-the-badge" alt="CISA CSET" />
-<img src="https://img.shields.io/badge/USGS%20dataretrieval-merged-0B6E4F?style=for-the-badge" alt="USGS dataretrieval" />
+<img src="https://img.shields.io/badge/USGS%20dataretrieval-3%20merged-0B6E4F?style=for-the-badge" alt="USGS dataretrieval" />
 <img src="https://img.shields.io/badge/Sandia%20pyGSTi-merged-00539F?style=for-the-badge" alt="Sandia pyGSTi" />
 <img src="https://img.shields.io/badge/CNCF%20cartography-merged-6D4C9F?style=for-the-badge" alt="CNCF cartography" />
 <img src="https://img.shields.io/badge/Milvus%20pymilvus-2%20merged-00A1EA?style=for-the-badge" alt="Milvus pymilvus" />
@@ -113,12 +113,13 @@ Each bar is a change that was reviewed and merged by the project's maintainers. 
 | **Rust `cc` crate** (rust-lang/cc-rs) | [Stop forwarding `-Cprofile-generate`/`-Cprofile-use` to the C compiler](https://github.com/rust-lang/cc-rs/pull/2003); fixes #1986 | PGO builds no longer segfault when the C compiler's LLVM differs from rustc's (the cause behind rust-lang/rust#163640); shipped in cc 1.8.0 the same day |
 | **Bokeh** | [Row/Column layout reserves room for aligned borders](https://github.com/bokeh/bokeh/pull/15487) (BokehJS) | Fixes cropped axes and legends; milestone 4.0, backported |
 | **Apple MLX (mlx-lm)** | [Left-padding mask in batched generation](https://github.com/ml-explore/mlx-lm/pull/1925) | Fixes wrong logits for left-padded batches in two model families |
+| **Google JAX** | [`betainc` converges per element](https://github.com/jax-ml/jax/pull/41440); fixes #28547 | The continued fraction no longer runs to the 200/600-iteration cap for the whole batch (24/43 iterations on the issue's input), and each result no longer depends on the rest of the batch |
 | **Google JAX** | [`zeta` JVP rule](https://github.com/jax-ml/jax/pull/41017), [`pareto` support boundary](https://github.com/jax-ml/jax/pull/41015) | Correct values and gradients outside the domain and at the support edge |
 | **ONNX** (Linux Foundation AI) | [Define `DynamicQuantizeLinear` scale for all-zero inputs](https://github.com/onnx/onnx/pull/8494) | Spec and reference fix: all-zero inputs no longer give a zero scale (NaN downstream); now matches ONNX Runtime |
 | **Apache ShenYu** (Apache Software Foundation) | [Render non-JSON API debug responses as plain text](https://github.com/apache/shenyu-dashboard/pull/708); fixes security issue #614 | The admin console no longer renders upstream response bodies as HTML; merged by a ShenYu PMC member |
 | **pylint** | [Fix pyreverse hang/RecursionError with `--all-associated`](https://github.com/pylint-dev/pylint/pull/11620); closes #3602 | Class diagrams of code that rebuilds classes on each inference no longer hang or crash; merged by the pylint maintainer and backported to 4.1.x |
 | **CISA CSET** (US DHS) | [Raise the PBKDF2 work factor to OWASP guidance](https://github.com/cisagov/cset/pull/5611) | Password-hash hardening in CISA's Cyber Security Evaluation Tool |
-| **USGS dataretrieval** (US DOI) | [Open-ended (`..`) date ranges in the OGC client](https://github.com/DOI-USGS/dataretrieval-python/pull/440) | Fixes silently unfiltered results and HTTP 400s in the official USGS water-data client |
+| **USGS dataretrieval** (US DOI) | [Open-ended (`..`) date ranges in the OGC client](https://github.com/DOI-USGS/dataretrieval-python/pull/440), [date/datetime/Timestamp arguments](https://github.com/DOI-USGS/dataretrieval-python/pull/442), [`start/end` interval strings](https://github.com/DOI-USGS/dataretrieval-python/pull/443) | Fixes silently unfiltered results and HTTP 400s in the official USGS water-data client |
 | **Sandia National Laboratories pyGSTi** | [Default POVM for circuits on a subset of a model's qubits](https://github.com/sandialabs/pyGSTi/pull/932); fixes #721, a 0.11 release blocker | Circuits on part of a multi-qubit model no longer fail with "Missing POVM"; merged by a Sandia maintainer |
 | **Microsoft Olive** | [Declare `requests` as an install dependency](https://github.com/microsoft/Olive/pull/2693) | Fixes `import olive` failing after a fresh install; also hit by Microsoft's olive-recipes |
 | **LangSmith SDK** | [Keep the HTTP response on `raise_for_status_with_text` errors](https://github.com/langchain-ai/langsmith-sdk/pull/3597) | Shipped in v0.14.2 |
