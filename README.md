@@ -46,6 +46,7 @@ M.S. in Computer Science, University of Cincinnati. AI Engineer at Zasti Inc. (A
 <img src="https://img.shields.io/badge/Milvus%20pymilvus-2%20merged-00A1EA?style=for-the-badge" alt="Milvus pymilvus" />
 <img src="https://img.shields.io/badge/Mozilla%20sccache-merged-000000?style=for-the-badge&logo=mozilla&logoColor=white" alt="Mozilla sccache" />
 <img src="https://img.shields.io/badge/cargo--binstall-merged-DEA584?style=for-the-badge&logo=rust&logoColor=black" alt="cargo-binstall" />
+<img src="https://img.shields.io/badge/deepset%20Haystack-merged-1C2D5A?style=for-the-badge" alt="deepset Haystack" />
 
 </div>
 
@@ -115,6 +116,7 @@ Each bar is a change that was reviewed and merged by the project's maintainers. 
 | **Rust `cc` crate** (rust-lang/cc-rs) | [Stop forwarding `-Cprofile-generate`/`-Cprofile-use` to the C compiler](https://github.com/rust-lang/cc-rs/pull/2003); fixes #1986 | PGO builds no longer segfault when the C compiler's LLVM differs from rustc's (the cause behind rust-lang/rust#163640); shipped in cc 1.8.0 the same day |
 | **Mozilla sccache** | [Handle MSVC `/Tc` and `/Tp` input arguments](https://github.com/mozilla/sccache/pull/2904); fixes #2062 | Windows Rust builds using sccache broke once cc 1.5 started passing `-Tp <file>`; projects such as rattler-build pinned cc 1.4.7 to work around it |
 | **cargo-binstall** | [`--dns` option to pick the DNS resolver](https://github.com/cargo-bins/cargo-binstall/pull/2709) | Users behind VPNs or NSS-only containers can switch from the built-in hickory-dns to the system resolver |
+| **deepset Haystack** | [Remove the unused `Sockets.__getattribute__` override](https://github.com/deepset-ai/haystack/pull/12966) | The override looked up the wrong attribute name and was never reached; removed with type-checked tests after three review rounds |
 | **Bokeh** | [Row/Column layout reserves room for aligned borders](https://github.com/bokeh/bokeh/pull/15487) (BokehJS) | Fixes cropped axes and legends; milestone 4.0, backported |
 | **Apple MLX (mlx-lm)** | [Left-padding mask in batched generation](https://github.com/ml-explore/mlx-lm/pull/1925) | Fixes wrong logits for left-padded batches in two model families |
 | **Google JAX** | [`betainc` converges per element](https://github.com/jax-ml/jax/pull/41440); fixes #28547 | The continued fraction no longer runs to the 200/600-iteration cap for the whole batch (24/43 iterations on the issue's input), and each result no longer depends on the rest of the batch |
