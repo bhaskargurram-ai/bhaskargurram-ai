@@ -47,6 +47,7 @@ M.S. in Computer Science, University of Cincinnati. AI Engineer at Zasti Inc. (A
 <img src="https://img.shields.io/badge/Mozilla%20sccache-merged-000000?style=for-the-badge&logo=mozilla&logoColor=white" alt="Mozilla sccache" />
 <img src="https://img.shields.io/badge/cargo--binstall-merged-DEA584?style=for-the-badge&logo=rust&logoColor=black" alt="cargo-binstall" />
 <img src="https://img.shields.io/badge/deepset%20Haystack-merged-1C2D5A?style=for-the-badge" alt="deepset Haystack" />
+<img src="https://img.shields.io/badge/NIST%20macOS%20Security-merged-005EA2?style=for-the-badge" alt="NIST macOS Security" />
 
 </div>
 
@@ -125,6 +126,7 @@ Each bar is a change that was reviewed and merged by the project's maintainers. 
 | **Apache ShenYu** (Apache Software Foundation) | [Render non-JSON API debug responses as plain text](https://github.com/apache/shenyu-dashboard/pull/708); fixes security issue #614 | The admin console no longer renders upstream response bodies as HTML; merged by a ShenYu PMC member |
 | **pylint** | [Fix pyreverse hang/RecursionError with `--all-associated`](https://github.com/pylint-dev/pylint/pull/11620); closes #3602 | Class diagrams of code that rebuilds classes on each inference no longer hang or crash; merged by the pylint maintainer and backported to 4.1.x |
 | **CISA CSET** (US DHS) | [Raise the PBKDF2 work factor to OWASP guidance](https://github.com/cisagov/cset/pull/5611) | Password-hash hardening in CISA's Cyber Security Evaluation Tool |
+| **NIST macOS Security Compliance Project** (US Dept. of Commerce) | [Show full help for `--help` and subcommand `--help`](https://github.com/usnistgov/macos_security/pull/841); fixes #838 | The `mscp` CLI's subcommand help was swallowed by the logging-flag parser; now each subcommand prints its real options |
 | **USGS dataretrieval** (US DOI) | [Open-ended (`..`) date ranges in the OGC client](https://github.com/DOI-USGS/dataretrieval-python/pull/440), [date/datetime/Timestamp arguments](https://github.com/DOI-USGS/dataretrieval-python/pull/442), [`start/end` interval strings](https://github.com/DOI-USGS/dataretrieval-python/pull/443) | Fixes silently unfiltered results and HTTP 400s in the official USGS water-data client |
 | **Sandia National Laboratories pyGSTi** | [Default POVM for circuits on a subset of a model's qubits](https://github.com/sandialabs/pyGSTi/pull/932); fixes #721, a 0.11 release blocker | Circuits on part of a multi-qubit model no longer fail with "Missing POVM"; merged by a Sandia maintainer |
 | **Microsoft Olive** | [Declare `requests` as an install dependency](https://github.com/microsoft/Olive/pull/2693) | Fixes `import olive` failing after a fresh install; also hit by Microsoft's olive-recipes |
