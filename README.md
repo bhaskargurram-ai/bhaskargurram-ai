@@ -35,7 +35,7 @@ M.S. in Computer Science, University of Cincinnati. AI Engineer at Zasti Inc. (A
 <img src="https://img.shields.io/badge/Rust%20cc--rs-merged-DEA584?style=for-the-badge&logo=rust&logoColor=black" alt="Rust cc-rs" />
 <img src="https://img.shields.io/badge/Apache%20ShenYu-merged-D22128?style=for-the-badge&logo=apache&logoColor=white" alt="Apache ShenYu" />
 <img src="https://img.shields.io/badge/ONNX-merged-005CED?style=for-the-badge&logo=onnx&logoColor=white" alt="ONNX" />
-<img src="https://img.shields.io/badge/Bokeh-merged-2A5E8C?style=for-the-badge" alt="Bokeh" />
+<img src="https://img.shields.io/badge/Bokeh-2%20merged-2A5E8C?style=for-the-badge" alt="Bokeh" />
 <img src="https://img.shields.io/badge/pylint-merged-1B2A49?style=for-the-badge" alt="pylint" />
 <img src="https://img.shields.io/badge/Microsoft%20Olive-merged-5E5E5E?style=for-the-badge" alt="Microsoft Olive" />
 <img src="https://img.shields.io/badge/LangSmith%20SDK-merged-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" alt="LangSmith SDK" />
@@ -120,7 +120,7 @@ Each bar is a change that was reviewed and merged by the project's maintainers. 
 | **cargo-binstall** | [`--dns` option to pick the DNS resolver](https://github.com/cargo-bins/cargo-binstall/pull/2709) | Users behind VPNs or NSS-only containers can switch from the built-in hickory-dns to the system resolver |
 | **fsspec** (filesystem layer under pandas, xarray, Dask, Hugging Face) | [`callback=` for download progress on caching filesystems](https://github.com/fsspec/filesystem_spec/pull/2272); closes #1623 | Progress reporting for multi-GB cached downloads, requested by NVIDIA's earth2studio team; merged by the lead maintainer |
 | **deepset Haystack** | [Remove the unused `Sockets.__getattribute__` override](https://github.com/deepset-ai/haystack/pull/12966) | The override looked up the wrong attribute name and was never reached; removed with type-checked tests after three review rounds |
-| **Bokeh** | [Row/Column layout reserves room for aligned borders](https://github.com/bokeh/bokeh/pull/15487) (BokehJS) | Fixes cropped axes and legends; milestone 4.0, backported |
+| **Bokeh** | [Nested layouts more than two levels deep](https://github.com/bokeh/bokeh/pull/15498) (closes #13384, #14359, milestone 4.0); [Row/Column layout reserves room for aligned borders](https://github.com/bokeh/bokeh/pull/15487) (BokehJS) | Fixes cropped axes and legends; milestone 4.0, backported |
 | **Apple MLX (mlx-lm)** | [Left-padding mask in batched generation](https://github.com/ml-explore/mlx-lm/pull/1925) | Fixes wrong logits for left-padded batches in two model families |
 | **Google JAX** | [`betainc` converges per element](https://github.com/jax-ml/jax/pull/41440); fixes #28547 | The continued fraction no longer runs to the 200/600-iteration cap for the whole batch (24/43 iterations on the issue's input), and each result no longer depends on the rest of the batch |
 | **Google JAX** | [`zeta` JVP rule](https://github.com/jax-ml/jax/pull/41017), [`pareto` support boundary](https://github.com/jax-ml/jax/pull/41015) | Correct values and gradients outside the domain and at the support edge |
