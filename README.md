@@ -2,22 +2,22 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0b1b3a,50:1f4e9c,100:2a78d6&text=Bhaskar%20Gurram&fontColor=ffffff&fontSize=52&fontAlignY=38&desc=AI%2FML%20engineer%20%C2%B7%20performance%20and%20correctness%20in%20open-source%20scientific%20software&descAlignY=58&descSize=17&animation=fadeIn" width="100%" alt="Bhaskar Gurram" />
 
-<a href="https://github.com/bhaskargurram-ai"><img src="https://readme-typing-svg.demolab.com/?lines=AI%2FML+engineer+at+Zasti+Inc.;I+make+numerical+code+faster+and+more+correct.;21+merged+upstream+PRs+across+18+projects;Google+JAX+%C2%B7+statsmodels+%C2%B7+Hugging+Face+%C2%B7+Apache+%C2%B7+Rust;30%2B+more+in+review+right+now&font=Fira+Code&size=20&duration=3200&pause=800&color=2A78D6&center=true&vCenter=true&width=720&height=48" alt="typing banner" /></a>
+<a href="https://github.com/bhaskargurram-ai"><img src="https://readme-typing-svg.demolab.com/?lines=AI%2FML+engineer+at+Zasti+Inc.;I+make+numerical+code+faster+and+more+correct.;33+merged+upstream+PRs+across+25+projects;Google+JAX+%C2%B7+Apache+%C2%B7+Prometheus+%C2%B7+Hugging+Face+%C2%B7+Rust;NIST+%C2%B7+CISA+%C2%B7+USGS+%C2%B7+Sandia+%C2%B7+Idaho+National+Lab;75%2B+more+in+review+right+now&font=Fira+Code&size=20&duration=3200&pause=800&color=2A78D6&center=true&vCenter=true&width=720&height=48" alt="typing banner" /></a>
 
 <a href="https://bhaskar.website"><img src="https://img.shields.io/badge/Website-bhaskar.website-2a78d6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
 <a href="https://scholar.google.com/citations?user=0tSEbKIAAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Google Scholar" /></a>
 <a href="https://www.linkedin.com/in/bhaskar-gurram"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:gurrambhaskar.ai@gmail.com"><img src="https://img.shields.io/badge/Email-gurrambhaskar.ai%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
-<img src="https://img.shields.io/badge/merged%20upstream%20PRs-21-2ea043?style=flat-square" alt="21 merged upstream PRs" />
-<img src="https://img.shields.io/badge/projects-18-1f6feb?style=flat-square" alt="18 projects" />
-<img src="https://img.shields.io/badge/in%20review-30%2B-8957e5?style=flat-square" alt="30+ in review" />
+<img src="https://img.shields.io/badge/merged%20upstream%20PRs-33-2ea043?style=flat-square" alt="33 merged upstream PRs" />
+<img src="https://img.shields.io/badge/projects-25-1f6feb?style=flat-square" alt="25 projects" />
+<img src="https://img.shields.io/badge/in%20review-75%2B-8957e5?style=flat-square" alt="75+ in review" />
 <img src="https://img.shields.io/badge/papers-2%20on%20arXiv-b45309?style=flat-square" alt="2 arXiv papers" />
 <img src="https://komarev.com/ghpvc/?username=bhaskargurram-ai&style=flat-square&color=2a78d6&label=profile+views" alt="profile views" />
 
 </div>
 
-I work on the performance and numerical correctness of scientific and ML software. Most of my open-source work is algorithmic speedups and correctness fixes in libraries that other people build on: Google JAX, statsmodels, xarray, Hugging Face candle, Apple MLX, the Rust `cc` crate, Apache ShenYu, ONNX, and tools run by CISA, USGS and Sandia National Laboratories.
+I work on the performance and numerical correctness of scientific and ML software. Most of my open-source work is algorithmic speedups and correctness fixes in libraries that other people build on: Google JAX, statsmodels, xarray, fsspec, Bokeh, Hugging Face candle, Apple MLX, the Rust `cc` crate, Mozilla sccache, Apache ShenYu, ONNX, Prometheus, and software run by US government agencies and national laboratories: CISA, NIST, USGS, Sandia National Laboratories and Idaho National Laboratory.
 
 M.S. in Computer Science, University of Cincinnati. AI Engineer at Zasti Inc. (Ashburn, VA).
 
@@ -75,8 +75,9 @@ flowchart TB
         onnx["ONNX: DynamicQuantizeLinear all-zero scale"]:::node
         pygsti["pyGSTi: default POVM on sub-models"]:::node
         pylint["pylint: pyreverse recursion hang"]:::node
-        bokeh["Bokeh: layout border alignment"]:::node
-        jax2 ~~~ mlx ~~~ onnx ~~~ pygsti ~~~ pylint ~~~ bokeh
+        bokeh["Bokeh: nested layouts"]:::node
+        moose["INL MOOSE: SchemaDiff negative lists"]:::node
+        jax2 ~~~ mlx ~~~ onnx ~~~ pygsti ~~~ pylint ~~~ bokeh ~~~ moose
     end
 
     subgraph sec["Security and reliability"]
@@ -86,7 +87,9 @@ flowchart TB
         usgs["USGS: open-ended date ranges"]:::node
         ls["LangSmith: keep HTTP response on errors"]:::node
         pym["pymilvus: import keeps app log handlers"]:::node
-        cc ~~~ shenyu ~~~ cset ~~~ usgs ~~~ ls ~~~ pym
+        nist["NIST mSCP: CLI help"]:::node
+        prom["Prometheus: exact /metrics route"]:::node
+        cc ~~~ shenyu ~~~ cset ~~~ usgs ~~~ ls ~~~ pym ~~~ nist ~~~ prom
     end
 
     classDef me fill:#2a78d6,stroke:#1f4e9c,color:#ffffff,font-weight:bold
@@ -142,20 +145,22 @@ Each bar is a change that was reviewed and merged by the project's maintainers. 
 | **cartography (CNCF)** | [Handle empty Google Workspace groups](https://github.com/cartography-cncf/cartography/pull/2018) | Fixes a sync crash |
 
 <details>
-<summary><b>In review right now</b> (30+ open pull requests)</summary>
+<summary><b>In review right now</b> (75+ open pull requests)</summary>
 
 <br>
 
 Features and fixes under maintainer review as of October 2026, among them:
 
-- **anchore/grype**: [`--fail-on risk=N` thresholds](https://github.com/anchore/grype/pull/3785) and [`--fail-on no-vex-statement`](https://github.com/anchore/grype/pull/3786)
-- **anchore/syft**: [Maven scope exclusion for the pom cataloger](https://github.com/anchore/syft/pull/5406)
-- **mermaid**: [flowchart `linkStyle` selecting links by label text](https://github.com/mermaid-js/mermaid/pull/8422)
-- **cargo-binstall**: [`--dns` / `BINSTALL_DNS` resolver selection](https://github.com/cargo-bins/cargo-binstall/pull/2709)
-- **rust-lang/socket2**: [`SO_EXCLUSIVEADDRUSE` getter and setter](https://github.com/rust-lang/socket2/pull/678)
-- **plotly.py**: [`custom_data` for `px.histogram`](https://github.com/plotly/plotly.py/pull/5811)
-- **fsspec**: [download progress callbacks on caching filesystems](https://github.com/fsspec/filesystem_spec/pull/2272); **gcsfs**: [generation pinning at `open()`](https://github.com/fsspec/gcsfs/pull/1099), [IAM signBlob URL signing](https://github.com/fsspec/gcsfs/pull/1100)
-- plus pandas, hickory-dns, Sphinx, LightGBM, Prometheus exporters, gitleaks, git-lfs, modin, tower-http, resvg, ureq and others
+- **Google JAX**: [new `jax.scipy.special.gammaincinv` and `gammainccinv`](https://github.com/jax-ml/jax/pull/41512), three review rounds with a core maintainer
+- **Apache Arrow (arrow-rs)**: [check Parquet bloom filters against Arrow arrays](https://github.com/apache/arrow-rs/pull/11549) (`ArrowSbbf`), closes #5550
+- **gcsfs** (Google Cloud Storage for fsspec): [generation pinning at `open()`](https://github.com/fsspec/gcsfs/pull/1099), [IAM signBlob URL signing on GCE/GKE](https://github.com/fsspec/gcsfs/pull/1100) (approved)
+- **Lawrence Livermore National Laboratory, Conduit**: [strided structured topologies in `to_unstructured`](https://github.com/LLNL/conduit/pull/1719), [keep domain ids in `save_mesh`](https://github.com/LLNL/conduit/pull/1720)
+- **National Renewable Energy Laboratory, SAM simulation core**: [net-metering credit rollover](https://github.com/NatLabRockies/ssc/pull/1428), [lifetime fuel usage for custom generation](https://github.com/NatLabRockies/ssc/pull/1429)
+- **Sandia National Laboratories pyGSTi**: [full-TP POVM conversion](https://github.com/sandialabs/pyGSTi/pull/940); **NIST teqp**: [Gross-Vrabec polar terms at zero composition](https://github.com/usnistgov/teqp/pull/195)
+- **Open Data Cube** (Geoscience Australia): [refreshable AWS credentials for GDAL](https://github.com/opendatacube/datacube-core/pull/2633)
+- **anchore/grype**: [`--fail-on risk=N` thresholds](https://github.com/anchore/grype/pull/3785) and [`--fail-on no-vex-statement`](https://github.com/anchore/grype/pull/3786); **anchore/syft**: [Maven scope exclusion](https://github.com/anchore/syft/pull/5406)
+- **mermaid**: [flowchart `linkStyle` selecting links by label text](https://github.com/mermaid-js/mermaid/pull/8422); **plotly.py**: [`custom_data` for `px.histogram`](https://github.com/plotly/plotly.py/pull/5811); **rust-lang/socket2**: [`SO_EXCLUSIVEADDRUSE`](https://github.com/rust-lang/socket2/pull/678)
+- plus pandas, PyTorch, Apache DataFusion, statsmodels, xgboost, hickory-dns, Sphinx, gitleaks, git-lfs, modin, tower-http, resvg, ureq and others
 
 </details>
 
