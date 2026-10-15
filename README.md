@@ -50,6 +50,7 @@ M.S. in Computer Science, University of Cincinnati. AI Engineer at Zasti Inc. (A
 <img src="https://img.shields.io/badge/NIST%20macOS%20Security-merged-005EA2?style=for-the-badge" alt="NIST macOS Security" />
 <img src="https://img.shields.io/badge/fsspec-merged-4B8BBE?style=for-the-badge" alt="fsspec" />
 <img src="https://img.shields.io/badge/INL%20MOOSE-merged-1F5C99?style=for-the-badge" alt="INL MOOSE" />
+<img src="https://img.shields.io/badge/Prometheus-merged-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" alt="Prometheus" />
 
 </div>
 
@@ -131,6 +132,7 @@ Each bar is a change that was reviewed and merged by the project's maintainers. 
 | **CISA CSET** (US DHS) | [Raise the PBKDF2 work factor to OWASP guidance](https://github.com/cisagov/cset/pull/5611) | Password-hash hardening in CISA's Cyber Security Evaluation Tool |
 | **NIST macOS Security Compliance Project** (US Dept. of Commerce) | [Show full help for `--help` and subcommand `--help`](https://github.com/usnistgov/macos_security/pull/841); fixes #838 | The `mscp` CLI's subcommand help was swallowed by the logging-flag parser; now each subcommand prints its real options |
 | **MOOSE** (Idaho National Laboratory, US DOE) | [Fix SchemaDiff string lists with negative values](https://github.com/idaholab/moose/pull/33980); fixes #33873 | MOOSE's regression-test differ misread lists containing negative numbers; used by every MOOSE app's test suite, including INL's Griffin reactor-physics code |
+| **Prometheus client_python** (CNCF) | [Allow make_asgi_app to be added as a Starlette/FastAPI route](https://github.com/prometheus/client_python/pull/1218); fixes #1016 | `app.add_route("/metrics", make_asgi_app())` now serves the exact path instead of redirecting to `/metrics/`; Starlette added to CI so both routes are tested. Approved by two maintainers. |
 | **USGS dataretrieval** (US DOI) | [Open-ended (`..`) date ranges in the OGC client](https://github.com/DOI-USGS/dataretrieval-python/pull/440), [date/datetime/Timestamp arguments](https://github.com/DOI-USGS/dataretrieval-python/pull/442), [`start/end` interval strings](https://github.com/DOI-USGS/dataretrieval-python/pull/443) | Fixes silently unfiltered results and HTTP 400s in the official USGS water-data client |
 | **Sandia National Laboratories pyGSTi** | [Default POVM for circuits on a subset of a model's qubits](https://github.com/sandialabs/pyGSTi/pull/932); fixes #721, a 0.11 release blocker | Circuits on part of a multi-qubit model no longer fail with "Missing POVM"; merged by a Sandia maintainer |
 | **Microsoft Olive** | [Declare `requests` as an install dependency](https://github.com/microsoft/Olive/pull/2693) | Fixes `import olive` failing after a fresh install; also hit by Microsoft's olive-recipes |
