@@ -9,7 +9,7 @@
 <a href="https://www.linkedin.com/in/bhaskar-gurram"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:gurrambhaskar.ai@gmail.com"><img src="https://img.shields.io/badge/Email-gurrambhaskar.ai%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
-<img src="https://img.shields.io/badge/merged%20upstream%20PRs-42-2ea043?style=flat-square" alt="42 merged upstream PRs" />
+<img src="https://img.shields.io/badge/merged%20upstream%20PRs-43-2ea043?style=flat-square" alt="43 merged upstream PRs" />
 <img src="https://img.shields.io/badge/projects-33-1f6feb?style=flat-square" alt="33 projects" />
 <img src="https://img.shields.io/badge/in%20review-75%2B-8957e5?style=flat-square" alt="75+ in review" />
 <img src="https://img.shields.io/badge/papers-2%20on%20arXiv-b45309?style=flat-square" alt="2 arXiv papers" />
@@ -132,6 +132,7 @@ Each bar is a change that was reviewed and merged by the project's maintainers. 
 | **Google JAX** | [`zeta` JVP rule](https://github.com/jax-ml/jax/pull/41017), [`pareto` support boundary](https://github.com/jax-ml/jax/pull/41015) | Correct values and gradients outside the domain and at the support edge |
 | **ONNX** (Linux Foundation AI) | [Define `DynamicQuantizeLinear` scale for all-zero inputs](https://github.com/onnx/onnx/pull/8494) | Spec and reference fix: all-zero inputs no longer give a zero scale (NaN downstream); now matches ONNX Runtime |
 | **Apache ShenYu** (Apache Software Foundation) | [Render non-JSON API debug responses as plain text](https://github.com/apache/shenyu-dashboard/pull/708); fixes security issue #614 | The admin console no longer renders upstream response bodies as HTML; merged by a ShenYu PMC member |
+| **Apache ShenYu** (Apache Software Foundation) | [Parse plugin-handle check rules without `eval`](https://github.com/apache/shenyu-dashboard/pull/707); fixes security issue #613 | Admin-stored rule strings are no longer executed as JavaScript in the admin console; merged by a ShenYu PMC member |
 | **pylint** | [Fix pyreverse hang/RecursionError with `--all-associated`](https://github.com/pylint-dev/pylint/pull/11620); closes #3602 | Class diagrams of code that rebuilds classes on each inference no longer hang or crash; merged by the pylint maintainer and backported to 4.1.x |
 | **CISA CSET** (US DHS) | [Raise the PBKDF2 work factor to OWASP guidance](https://github.com/cisagov/cset/pull/5611) | Password-hash hardening in CISA's Cyber Security Evaluation Tool |
 | **NIST macOS Security Compliance Project** (US Dept. of Commerce) | [Show full help for `--help` and subcommand `--help`](https://github.com/usnistgov/macos_security/pull/841); fixes #838 | The `mscp` CLI's subcommand help was swallowed by the logging-flag parser; now each subcommand prints its real options |
