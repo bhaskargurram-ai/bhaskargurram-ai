@@ -9,7 +9,7 @@
 <a href="https://www.linkedin.com/in/bhaskar-gurram"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:gurrambhaskar.ai@gmail.com"><img src="https://img.shields.io/badge/Email-gurrambhaskar.ai%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
-<img src="https://img.shields.io/badge/merged%20upstream%20PRs-41-2ea043?style=flat-square" alt="41 merged upstream PRs" />
+<img src="https://img.shields.io/badge/merged%20upstream%20PRs-42-2ea043?style=flat-square" alt="42 merged upstream PRs" />
 <img src="https://img.shields.io/badge/projects-33-1f6feb?style=flat-square" alt="33 projects" />
 <img src="https://img.shields.io/badge/in%20review-75%2B-8957e5?style=flat-square" alt="75+ in review" />
 <img src="https://img.shields.io/badge/papers-2%20on%20arXiv-b45309?style=flat-square" alt="2 arXiv papers" />
@@ -121,6 +121,7 @@ Each bar is a change that was reviewed and merged by the project's maintainers. 
 | **xarray** | [`interp` skips `sortby` on already-sorted coordinates](https://github.com/pydata/xarray/pull/11658) | Vectorized interp 164 ms → 2.9 ms |
 | **Hugging Face candle** | [Row tiling in the CPU quantized matmul for prefill](https://github.com/huggingface/candle/pull/4003) | About 1.45x faster prefill for Q4K / Q8_0; outputs bit-identical |
 | **Rust `cc` crate** (rust-lang/cc-rs) | [Stop forwarding `-Cprofile-generate`/`-Cprofile-use` to the C compiler](https://github.com/rust-lang/cc-rs/pull/2003); fixes #1986 | PGO builds no longer segfault when the C compiler's LLVM differs from rustc's (the cause behind rust-lang/rust#163640); shipped in cc 1.8.0 the same day |
+| **Rust `cc` crate** (rust-lang/cc-rs) | [Keep the order of `flag` and `flag_if_supported`](https://github.com/rust-lang/cc-rs/pull/2044); fixes #855 | Probed flags were always emitted after plain flags, so a later `flag` could not override them; both now share one ordered list (open since 2023) |
 | **Mozilla sccache** | [Handle MSVC `/Tc` and `/Tp` input arguments](https://github.com/mozilla/sccache/pull/2904); fixes #2062 | Windows Rust builds using sccache broke once cc 1.5 started passing `-Tp <file>`; projects such as rattler-build pinned cc 1.4.7 to work around it |
 | **cargo-binstall** | [`--dns` option to pick the DNS resolver](https://github.com/cargo-bins/cargo-binstall/pull/2709) | Users behind VPNs or NSS-only containers can switch from the built-in hickory-dns to the system resolver |
 | **fsspec** (filesystem layer under pandas, xarray, Dask, Hugging Face) | [`callback=` for download progress on caching filesystems](https://github.com/fsspec/filesystem_spec/pull/2272); closes #1623 | Progress reporting for multi-GB cached downloads, requested by NVIDIA's earth2studio team; merged by the lead maintainer |
