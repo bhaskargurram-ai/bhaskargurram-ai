@@ -9,7 +9,7 @@
 <a href="https://www.linkedin.com/in/bhaskar-gurram"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:gurrambhaskar.ai@gmail.com"><img src="https://img.shields.io/badge/Email-gurrambhaskar.ai%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
-<img src="https://img.shields.io/badge/merged%20upstream%20PRs-43-2ea043?style=flat-square" alt="43 merged upstream PRs" />
+<img src="https://img.shields.io/badge/merged%20upstream%20PRs-44-2ea043?style=flat-square" alt="44 merged upstream PRs" />
 <img src="https://img.shields.io/badge/projects-33-1f6feb?style=flat-square" alt="33 projects" />
 <img src="https://img.shields.io/badge/in%20review-75%2B-8957e5?style=flat-square" alt="75+ in review" />
 <img src="https://img.shields.io/badge/papers-2%20on%20arXiv-b45309?style=flat-square" alt="2 arXiv papers" />
@@ -128,6 +128,7 @@ Each bar is a change that was reviewed and merged by the project's maintainers. 
 | **deepset Haystack** | [Remove the unused `Sockets.__getattribute__` override](https://github.com/deepset-ai/haystack/pull/12966) | The override looked up the wrong attribute name and was never reached; removed with type-checked tests after three review rounds |
 | **Bokeh** | [Nested layouts more than two levels deep](https://github.com/bokeh/bokeh/pull/15498) (closes #13384, #14359, milestone 4.0); [Row/Column layout reserves room for aligned borders](https://github.com/bokeh/bokeh/pull/15487) (BokehJS) | Fixes cropped axes and legends; milestone 4.0, backported |
 | **Apple MLX (mlx-lm)** | [Left-padding mask in batched generation](https://github.com/ml-explore/mlx-lm/pull/1925) | Fixes wrong logits for left-padded batches in two model families |
+| **Google JAX** | [New `jax.scipy.special.gammaincinv` and `gammainccinv`](https://github.com/jax-ml/jax/pull/41512); closes #5350 (open since 2021) | Differentiable inverse incomplete gamma (the gamma quantile), so JAX users no longer need TensorFlow Probability for it; designed over three review rounds with a core maintainer and tested against mpmath |
 | **Google JAX** | [`betainc` converges per element](https://github.com/jax-ml/jax/pull/41440); fixes #28547 | The continued fraction no longer runs to the 200/600-iteration cap for the whole batch (24/43 iterations on the issue's input), and each result no longer depends on the rest of the batch |
 | **Google JAX** | [`zeta` JVP rule](https://github.com/jax-ml/jax/pull/41017), [`pareto` support boundary](https://github.com/jax-ml/jax/pull/41015) | Correct values and gradients outside the domain and at the support edge |
 | **ONNX** (Linux Foundation AI) | [Define `DynamicQuantizeLinear` scale for all-zero inputs](https://github.com/onnx/onnx/pull/8494) | Spec and reference fix: all-zero inputs no longer give a zero scale (NaN downstream); now matches ONNX Runtime |
@@ -160,7 +161,6 @@ Each bar is a change that was reviewed and merged by the project's maintainers. 
 
 Features and fixes under maintainer review as of October 2026, among them:
 
-- **Google JAX**: [new `jax.scipy.special.gammaincinv` and `gammainccinv`](https://github.com/jax-ml/jax/pull/41512), three review rounds with a core maintainer
 - **Apache Arrow (arrow-rs)**: [check Parquet bloom filters against Arrow arrays](https://github.com/apache/arrow-rs/pull/11549) (`ArrowSbbf`), closes #5550
 - **gcsfs** (Google Cloud Storage for fsspec): [generation pinning at `open()`](https://github.com/fsspec/gcsfs/pull/1099)
 - **Lawrence Livermore National Laboratory, Conduit**: [strided structured topologies in `to_unstructured`](https://github.com/LLNL/conduit/pull/1719), [keep domain ids in `save_mesh`](https://github.com/LLNL/conduit/pull/1720)
