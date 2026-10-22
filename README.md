@@ -2,14 +2,14 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0b1b3a,50:1f4e9c,100:2a78d6&text=Bhaskar%20Gurram&fontColor=ffffff&fontSize=52&fontAlignY=38&desc=AI%2FML%20engineer%20%C2%B7%20performance%20and%20correctness%20in%20open-source%20scientific%20software&descAlignY=58&descSize=17&animation=fadeIn" width="100%" alt="Bhaskar Gurram" />
 
-<a href="https://github.com/bhaskargurram-ai"><img src="https://readme-typing-svg.demolab.com/?lines=AI%2FML+engineer+at+Zasti+Inc.;I+make+numerical+code+faster+and+more+correct.;46+merged+upstream+PRs+across+34+projects;Google+JAX+%C2%B7+WordPress+%C2%B7+Apache+%C2%B7+Prometheus+%C2%B7+Hugging+Face+%C2%B7+Rust;NIST+%C2%B7+CISA+%C2%B7+USGS+%C2%B7+Sandia+%C2%B7+Idaho+National+Lab;75%2B+more+in+review+right+now&font=Fira+Code&size=20&duration=3200&pause=800&color=2A78D6&center=true&vCenter=true&width=720&height=48" alt="typing banner" /></a>
+<a href="https://github.com/bhaskargurram-ai"><img src="https://readme-typing-svg.demolab.com/?lines=AI%2FML+engineer+at+Zasti+Inc.;I+make+numerical+code+faster+and+more+correct.;47+merged+upstream+PRs+across+34+projects;Google+JAX+%C2%B7+WordPress+%C2%B7+Apache+%C2%B7+Prometheus+%C2%B7+Hugging+Face+%C2%B7+Rust;NIST+%C2%B7+CISA+%C2%B7+USGS+%C2%B7+Sandia+%C2%B7+Idaho+National+Lab;75%2B+more+in+review+right+now&font=Fira+Code&size=20&duration=3200&pause=800&color=2A78D6&center=true&vCenter=true&width=720&height=48" alt="typing banner" /></a>
 
 <a href="https://bhaskar.website"><img src="https://img.shields.io/badge/Website-bhaskar.website-2a78d6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
 <a href="https://scholar.google.com/citations?user=0tSEbKIAAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Google Scholar" /></a>
 <a href="https://www.linkedin.com/in/bhaskar-gurram"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:gurrambhaskar.ai@gmail.com"><img src="https://img.shields.io/badge/Email-gurrambhaskar.ai%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
-<img src="https://img.shields.io/badge/merged%20upstream%20PRs-46-2ea043?style=flat-square" alt="46 merged upstream PRs" />
+<img src="https://img.shields.io/badge/merged%20upstream%20PRs-47-2ea043?style=flat-square" alt="47 merged upstream PRs" />
 <img src="https://img.shields.io/badge/projects-33-1f6feb?style=flat-square" alt="33 projects" />
 <img src="https://img.shields.io/badge/in%20review-75%2B-8957e5?style=flat-square" alt="75+ in review" />
 <img src="https://img.shields.io/badge/papers-2%20on%20arXiv-b45309?style=flat-square" alt="2 arXiv papers" />
@@ -28,7 +28,7 @@ M.S. in Computer Science, University of Cincinnati. AI Engineer at Zasti Inc. (A
 <div align="center">
 
 <img src="https://img.shields.io/badge/Google%20JAX-6%20merged-4285F4?style=for-the-badge" alt="Google JAX" />
-<img src="https://img.shields.io/badge/statsmodels-merged-3F51B5?style=for-the-badge" alt="statsmodels" />
+<img src="https://img.shields.io/badge/statsmodels-2%20merged-3F51B5?style=for-the-badge" alt="statsmodels" />
 <img src="https://img.shields.io/badge/xarray-merged-E28308?style=for-the-badge" alt="xarray" />
 <img src="https://img.shields.io/badge/Hugging%20Face%20candle-merged-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face candle" />
 <img src="https://img.shields.io/badge/Apple%20MLX-merged-000000?style=for-the-badge&logo=apple&logoColor=white" alt="Apple MLX" />
