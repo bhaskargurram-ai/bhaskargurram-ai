@@ -2,15 +2,15 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0b1b3a,50:1f4e9c,100:2a78d6&text=Bhaskar%20Gurram&fontColor=ffffff&fontSize=52&fontAlignY=38&desc=AI%2FML%20engineer%20%C2%B7%20performance%20and%20correctness%20in%20open-source%20scientific%20software&descAlignY=58&descSize=17&animation=fadeIn" width="100%" alt="Bhaskar Gurram" />
 
-<a href="https://github.com/bhaskargurram-ai"><img src="https://readme-typing-svg.demolab.com/?lines=AI%2FML+engineer+at+Zasti+Inc.;I+make+numerical+code+faster+and+more+correct.;51+merged+upstream+PRs+across+34+projects;Google+JAX+%C2%B7+WordPress+%C2%B7+Apache+%C2%B7+Prometheus+%C2%B7+Hugging+Face+%C2%B7+Rust;NIST+%C2%B7+CISA+%C2%B7+USGS+%C2%B7+Sandia+%C2%B7+Idaho+National+Lab;75%2B+more+in+review+right+now&font=Fira+Code&size=20&duration=3200&pause=800&color=2A78D6&center=true&vCenter=true&width=720&height=48" alt="typing banner" /></a>
+<a href="https://github.com/bhaskargurram-ai"><img src="https://readme-typing-svg.demolab.com/?lines=AI%2FML+engineer+at+Zasti+Inc.;I+make+numerical+code+faster+and+more+correct.;52+merged+upstream+PRs+across+35+projects;Google+JAX+%C2%B7+WordPress+%C2%B7+Apache+%C2%B7+Prometheus+%C2%B7+Hugging+Face+%C2%B7+Rust;NIST+%C2%B7+CISA+%C2%B7+USGS+%C2%B7+Sandia+%C2%B7+Idaho+National+Lab;75%2B+more+in+review+right+now&font=Fira+Code&size=20&duration=3200&pause=800&color=2A78D6&center=true&vCenter=true&width=720&height=48" alt="typing banner" /></a>
 
 <a href="https://bhaskar.website"><img src="https://img.shields.io/badge/Website-bhaskar.website-2a78d6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
 <a href="https://scholar.google.com/citations?user=0tSEbKIAAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Google Scholar" /></a>
 <a href="https://www.linkedin.com/in/bhaskar-gurram"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:gurrambhaskar.ai@gmail.com"><img src="https://img.shields.io/badge/Email-gurrambhaskar.ai%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
-<img src="https://img.shields.io/badge/merged%20upstream%20PRs-51-2ea043?style=flat-square" alt="51 merged upstream PRs" />
-<img src="https://img.shields.io/badge/projects-33-1f6feb?style=flat-square" alt="33 projects" />
+<img src="https://img.shields.io/badge/merged%20upstream%20PRs-52-2ea043?style=flat-square" alt="52 merged upstream PRs" />
+<img src="https://img.shields.io/badge/projects-34-1f6feb?style=flat-square" alt="34 projects" />
 <img src="https://img.shields.io/badge/in%20review-75%2B-8957e5?style=flat-square" alt="75+ in review" />
 <img src="https://img.shields.io/badge/papers-2%20on%20arXiv-b45309?style=flat-square" alt="2 arXiv papers" />
 <img src="https://komarev.com/ghpvc/?username=bhaskargurram-ai&style=flat-square&color=2a78d6&label=profile+views" alt="profile views" />
@@ -51,6 +51,7 @@ M.S. in Computer Science, University of Cincinnati. AI Engineer at Zasti Inc. (A
 <img src="https://img.shields.io/badge/fsspec-merged-4B8BBE?style=for-the-badge" alt="fsspec" />
 <img src="https://img.shields.io/badge/INL%20MOOSE-merged-1F5C99?style=for-the-badge" alt="INL MOOSE" />
 <img src="https://img.shields.io/badge/Prometheus-merged-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" alt="Prometheus" />
+<img src="https://img.shields.io/badge/Zarr-merged-E35F2E?style=for-the-badge" alt="Zarr" />
 
 </div>
 
@@ -135,6 +136,7 @@ Each bar is a change that was reviewed and merged by the project's maintainers. 
 | **ONNX** (Linux Foundation AI) | [Define `DynamicQuantizeLinear` scale for all-zero inputs](https://github.com/onnx/onnx/pull/8494) | Spec and reference fix: all-zero inputs no longer give a zero scale (NaN downstream); now matches ONNX Runtime |
 | **Apache ShenYu** (Apache Software Foundation) | [Render non-JSON API debug responses as plain text](https://github.com/apache/shenyu-dashboard/pull/708); fixes security issue #614 | The admin console no longer renders upstream response bodies as HTML; merged by a ShenYu PMC member |
 | **Apache ShenYu** (Apache Software Foundation) | [Parse plugin-handle check rules without `eval`](https://github.com/apache/shenyu-dashboard/pull/707); fixes security issue #613 | Admin-stored rule strings are no longer executed as JavaScript in the admin console; merged by a ShenYu PMC member |
+| **Zarr** (zarr-python, chunked array storage under xarray and Dask) | [Require opt-in to read data encoded with the pickle codec](https://github.com/zarr-developers/zarr-python/pull/4465); closes #4404 | Opening an untrusted Zarr store no longer runs arbitrary code through the pickle codec unless `array.allow_unsafe_pickle_decode` is set; merged by a core maintainer, planned for 3.4.2 |
 | **pylint** | [Fix pyreverse hang/RecursionError with `--all-associated`](https://github.com/pylint-dev/pylint/pull/11620); closes #3602 | Class diagrams of code that rebuilds classes on each inference no longer hang or crash; merged by the pylint maintainer and backported to 4.1.x |
 | **CISA CSET** (US DHS) | [Raise the PBKDF2 work factor to OWASP guidance](https://github.com/cisagov/cset/pull/5611) | Password-hash hardening in CISA's Cyber Security Evaluation Tool |
 | **NIST macOS Security Compliance Project** (US Dept. of Commerce) | [Show full help for `--help` and subcommand `--help`](https://github.com/usnistgov/macos_security/pull/841); fixes #838 | The `mscp` CLI's subcommand help was swallowed by the logging-flag parser; now each subcommand prints its real options |
