@@ -2,15 +2,15 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0b1b3a,50:1f4e9c,100:2a78d6&text=Bhaskar%20Gurram&fontColor=ffffff&fontSize=52&fontAlignY=38&desc=AI%2FML%20engineer%20%C2%B7%20performance%20and%20correctness%20in%20open-source%20scientific%20software&descAlignY=58&descSize=17&animation=fadeIn" width="100%" alt="Bhaskar Gurram" />
 
-<a href="https://github.com/bhaskargurram-ai"><img src="https://readme-typing-svg.demolab.com/?lines=AI%2FML+engineer+at+Zasti+Inc.;I+make+numerical+code+faster+and+more+correct.;53+merged+upstream+PRs+across+35+projects;Google+JAX+%C2%B7+WordPress+%C2%B7+Apache+%C2%B7+Prometheus+%C2%B7+Hugging+Face+%C2%B7+Rust;NIST+%C2%B7+CISA+%C2%B7+USGS+%C2%B7+Sandia+%C2%B7+Idaho+National+Lab;75%2B+more+in+review+right+now&font=Fira+Code&size=20&duration=3200&pause=800&color=2A78D6&center=true&vCenter=true&width=720&height=48" alt="typing banner" /></a>
+<a href="https://github.com/bhaskargurram-ai"><img src="https://readme-typing-svg.demolab.com/?lines=AI%2FML+engineer+at+Zasti+Inc.;I+make+numerical+code+faster+and+more+correct.;54+merged+upstream+PRs+across+35+projects;Google+JAX+%C2%B7+WordPress+%C2%B7+Apache+%C2%B7+Prometheus+%C2%B7+Hugging+Face+%C2%B7+Rust;NIST+%C2%B7+CISA+%C2%B7+USGS+%C2%B7+Sandia+%C2%B7+Idaho+National+Lab;75%2B+more+in+review+right+now&font=Fira+Code&size=20&duration=3200&pause=800&color=2A78D6&center=true&vCenter=true&width=720&height=48" alt="typing banner" /></a>
 
 <a href="https://bhaskar.website"><img src="https://img.shields.io/badge/Website-bhaskar.website-2a78d6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
 <a href="https://scholar.google.com/citations?user=0tSEbKIAAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Google Scholar" /></a>
 <a href="https://www.linkedin.com/in/bhaskar-gurram"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:gurrambhaskar.ai@gmail.com"><img src="https://img.shields.io/badge/Email-gurrambhaskar.ai%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
-<img src="https://img.shields.io/badge/merged%20upstream%20PRs-53-2ea043?style=flat-square" alt="53 merged upstream PRs" />
-<img src="https://img.shields.io/badge/projects-34-1f6feb?style=flat-square" alt="34 projects" />
+<img src="https://img.shields.io/badge/merged%20upstream%20PRs-54-2ea043?style=flat-square" alt="54 merged upstream PRs" />
+<img src="https://img.shields.io/badge/projects-35-1f6feb?style=flat-square" alt="35 projects" />
 <img src="https://img.shields.io/badge/in%20review-75%2B-8957e5?style=flat-square" alt="75+ in review" />
 <img src="https://img.shields.io/badge/papers-2%20on%20arXiv-b45309?style=flat-square" alt="2 arXiv papers" />
 <img src="https://komarev.com/ghpvc/?username=bhaskargurram-ai&style=flat-square&color=2a78d6&label=profile+views" alt="profile views" />
@@ -122,6 +122,7 @@ Each bar is a change that was reviewed and merged by the project's maintainers. 
 | **statsmodels** | [Fit nested lag regressions from one QR in lag order selection](https://github.com/statsmodels/statsmodels/pull/10571) (`adfuller` autolag, `VAR.select_order`, `pacf_ols`/`pacf_yw`, `ardl_select_order`); closes #2276, open since 2015 | VAR order search 3.96 s → 0.12 s; `pacf_ols` at n = 200,000 17.2 s → 0.20 s; ARDL search over 9,000 models 11.7 s → 0.17 s; same selections as before |
 | **statsmodels** | [Zivot-Andrews unit-root test from one QR](https://github.com/statsmodels/statsmodels/pull/10602): all candidate break periods at once instead of one regression per period; closes #10601 | 25-65x faster at n = 2,000 and 50-140x at n = 5,000 (maintainer's measurements); matches R's `urca` to 13 digits |
 | **xarray** | [`interp` skips `sortby` on already-sorted coordinates](https://github.com/pydata/xarray/pull/11658) | Vectorized interp 164 ms → 2.9 ms |
+| **Apache Arrow** (arrow-rs, Parquet writer) | [Share the writer's Arrow-to-Parquet conversions through visitors](https://github.com/apache/arrow-rs/pull/11741), with a fix for how the dictionary encoder's hash lookup was compiled; groundwork for #5550 | No writer benchmark slower; dictionary and run-end-encoded column writes about 11% faster (483 benchmarks, maintainer's benchmark runner) |
 | **Hugging Face candle** | [Row tiling in the CPU quantized matmul for prefill](https://github.com/huggingface/candle/pull/4003) | About 1.45x faster prefill for Q4K / Q8_0; outputs bit-identical |
 | **Rust `cc` crate** (rust-lang/cc-rs) | [Stop forwarding `-Cprofile-generate`/`-Cprofile-use` to the C compiler](https://github.com/rust-lang/cc-rs/pull/2003); fixes #1986 | PGO builds no longer segfault when the C compiler's LLVM differs from rustc's (the cause behind rust-lang/rust#163640); shipped in cc 1.8.0 the same day |
 | **Rust `cc` crate** (rust-lang/cc-rs) | [Keep the order of `flag` and `flag_if_supported`](https://github.com/rust-lang/cc-rs/pull/2044); fixes #855 | Probed flags were always emitted after plain flags, so a later `flag` could not override them; both now share one ordered list (open since 2023) |
